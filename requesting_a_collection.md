@@ -47,6 +47,20 @@ which would collect tweets with 'good' AND 'society', 'dystopian' OR 'evil' (or 
 
 Post filters are a way for you to enforce certiain rules onto a tweet that you couldn't enforce with the above basic track inputs to the twitter streaming API.
 
+You can add post filters yourself from the philosoraptor dashboard:
+
+<a href="http://philosoraptor.bio.nyu.edu/dashboard">http://philosoraptor.bio.nyu.edu/dashboard</a>
+
+1. Go to the dashboard by clicking on the URL above.
+
+2. Click on the name of your collection.
+
+3. Click on the tab labeled 'Post-filtering.'
+
+4. Create your post filters by choosing an option from the dropb down menu and choosing inputs.
+
+Read on to learn abut inputs for each post filter.
+
 ### `field_contains` post filter: 
 
 One way to use this is to enter keywords/phrases you want matched like so:
@@ -126,6 +140,8 @@ So to request this post filter you would say something like in an email:
 " For the within_geobox post filter get me geotagges tweets within this box: [-75.280303, 39.8670041, -74.9557629, 40.1379919]"
 
 #Collecting Tweets from Specific Users (follow) - For us to start collection we need one thing:
+
+##Note: We can only collect tweets from about ~ 100 users on a streaming collections. 
 
 ##1. We need a list of user ids you would like to follow.
 
