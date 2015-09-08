@@ -26,7 +26,7 @@ the words will appear together in a sentence. So tweets like "I live in a good w
 
 So if you wanted to look for the words "good" OR "world" in a tweet you could give us an input like so:
 
-"good,world" and it could give you a tweet like so:
+["good,world"] (one string with a comma inside) and it could give you a tweet like so (WITH COMMAS):
 
 "I am a very good person, I live in a wonderful world."
 
@@ -38,9 +38,10 @@ or:
 
 "God is good."
 
-You could also structure the above query like so (without commas):
 
-"good", "world" and it would give you the same tweets like so:
+###3 - You can also just submit single word terms like so:
+
+["good" "world"] (two strings, no comma) and it would give you the same tweets like so:
 
 "I am a very good person, I live in a wonderful world."
 
