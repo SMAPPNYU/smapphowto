@@ -85,7 +85,7 @@ Read on to learn abut inputs for each post filter.
 
 One way to use this is to enter keywords/phrases you want matched like so:
 
-field_contains(tweet, 'NYC', 'good society') - (checks tweet['text']) would match the word NYC and the phrase NYC on the post filter.
+field_contains(tweet, 'text', 'NYC', 'good society') - (checks tweet['text']) would match the word NYC and the phrase NYC on the post filter for the 'text' field of a tweet object.
 
 You can also use it to match fields on the twitter object like the screen name or userid:
 
