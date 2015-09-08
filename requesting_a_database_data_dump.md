@@ -40,5 +40,5 @@ If you want the user_location to be from a certain place you need to tell us tha
 
 If you only want geo tagged tweets or non geo tagged tweets you should tell us that.
 
-Anything I did not metion here should be documented in the smapp-toolkit (somethings are definitely missing from the docs though so don't hesitate to ask):
+Anything I did not metion here should be documented in the smapp-toolkit (some things are definitely missing from the docs though so don't hesitate to ask):
 <a href="https://github.com/SMAPPNYU/smapp-toolkit">https://github.com/SMAPPNYU/smapp-toolkit</a>
