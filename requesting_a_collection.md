@@ -47,7 +47,7 @@ which would collect tweets with 'good' AND 'society', 'dystopian' OR 'evil' (or 
 
 Post filters are a way for you to enforce certiain rules onto a tweet that you couldn't enforce with the above basic track inputs to the twitter streaming API.
 
-You can add post filters yourself from the philosoraptor dashboard:
+###You can add post filters yourself from the philosoraptor dashboard:
 
 <a href="http://philosoraptor.bio.nyu.edu/dashboard">http://philosoraptor.bio.nyu.edu/dashboard</a>
 
