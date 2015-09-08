@@ -191,11 +191,11 @@ and make sure they are from from these user ids: (`follow`)
 
 and make sure they are from within this geo box: (`geo`)
 
-[-122.75, 36.8, -121.75, 37.8] (San Francisco)
+-122.75, 36.8, -121.75, 37.8 (San Francisco)
 
 and this one: 
 
-[-74, 40, -73, 41] (New York)
+-74, 40, -73, 41 (New York)
 
 Please add these post filters:
 
