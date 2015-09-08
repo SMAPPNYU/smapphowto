@@ -19,6 +19,8 @@ or a tweet like so:
 
 "I love clouds; this is a good world." 
 
+The API does NOT match phrases so submitting the phrase "good world" does not guarantee that
+the words will appear together in a sentence. So tweets like "I live in a good world." are NOT guaranteed. 
 
 ###2 - Get tweets containing "good" OR "world" by giving the streaming API an input like so "good, world" -> commas between words look for EITHER word in a tweet. This will return tweets with one of the terms or BOTH of the terms. It is a logical OR, not an exclusive XOR. 
 
@@ -36,12 +38,29 @@ or:
 
 "God is good."
 
+You could also structure the above query like so (without commas):
+
+"good", "world" and it would give you the same tweets like so:
+
+"I am a very good person, I live in a wonderful world."
+
+or a tweet like so:
+
+"I love the world." 
+
+or:
+
+"God is good."
+
 So to request for tweets with these terms to be collected on the twitter streaming API like in an email you would say something like:
 
 " Good morning guys, could I get these terms collected on: 'good society', 'dystopian, evil', 'unjust, system' "
 
 which would collect tweets with 'good' AND 'society', 'dystopian' OR 'evil' (or both), 'unjust' OR 'system' (or both).
 
+Read more about the track component (the stuff above in 1- and 2-) from the twitter streaming API docs: <a href="https://dev.twitter.com/streaming/overview/request-parameters#track"> https://dev.twitter.com/streaming/overview/request-parameters#track</a>
+
+You can read about the specific fields we match against (we only support track, follow, and location, which internally we refer to as geo): <a href="https://dev.twitter.com/streaming/reference/post/statuses/filter">https://dev.twitter.com/streaming/reference/post/statuses/filter</a>
 
 ##2. We need a list of terms you want post filtered. 
 
