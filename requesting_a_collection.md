@@ -1,5 +1,5 @@
 How to properly request to start collection 
-===========================================================
+===========================================
 
 #Collecting Terms in Tweets (track) - For us to start a collection we need two things to collect TERMS in tweets:
 
