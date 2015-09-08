@@ -36,7 +36,7 @@ or:
 "God is good."
 
 
-###2. We need a list of terms you want post filtered. 
+##2. We need a list of terms you want post filtered. 
 
 Post filters are a way for you to enforce certiain rules onto a tweet that you couldn't enforce with the above basic track inputs to the twitter streaming API.
 
