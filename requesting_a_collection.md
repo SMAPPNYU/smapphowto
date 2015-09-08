@@ -1,4 +1,4 @@
-How to properly request a collection from a SMaPP programmer
+How to properly request to start collection 
 ===========================================================
 
 ##Collecting Terms in Tweets (track) - For us to start a collection we need two things to collect TERMS in tweets:
@@ -120,12 +120,12 @@ So to request this post filter you would say something like in an email:
 
 ##Collecting Tweets from Specific Users (follow) - For us to start collection we need one thing:
 
-###1. We need a list of user ids you would like to follow.
+#1. We need a list of user ids you would like to follow.
 
 
 ##Collecting Tweets from a specific Geobox (geo) - For us to start a collection we need one thing:
 
-###1. We need the geobox in terms of geographic coordinates you would like the tweets collected in.
+#1. We need the geobox in terms of geographic coordinates you would like the tweets collected in.
 
 
 
