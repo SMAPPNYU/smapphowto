@@ -1,5 +1,5 @@
-How to properly request to a data dump
-======================================
+How to properly request a data dump from mongo
+==============================================
 
 #Getting data from a database - For us to get data from a database we need a few things.
 
