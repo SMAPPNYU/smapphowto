@@ -89,7 +89,7 @@ field_contains(tweet, 'text', 'NYC', 'good society') - (checks tweet['text']) wo
 
 You can also use it to match fields on the twitter object like the screen name or userid:
 
-field_contains(tweet, 'user.screen_name', 'bob', 'alice') - (checks tweet['user']['screen_name'])
+field_contains(tweet, 'user.screen_name', 'bob', 'alice')
 
 Would setup a post filter to match screen_names (twitter handles) that had the string "bob" or "alice" inside of them:
 
@@ -99,6 +99,8 @@ So to request this post filter you would say something like in an email:
 
 " For the field_contains post filter get me these terms: 'NYC', 'good society' "
 
+checks tweet['user']['screen_name']
+
 ### `field_contains_case_sensitive` post filter:
 
 This post filter is the same as above but it is case insensitive.
@@ -107,7 +109,7 @@ So to request this post filter you would say something like in an email:
 
 Same as above.
 
-### `place_name_contains` post filter (checks tweet['place']['full_name']):
+### `place_name_contains` post filter:
 
 This post filter will only keep tweets where the `place` field of a twitter object.
 
@@ -119,7 +121,9 @@ So to request this post filter you would say something like in an email:
 
 " For the place_name_contains post filder get me these terms: 'Kiev', 'Paris', 'Berlin' "
 
-### `user_description_contains` post filter (checks tweet['user']['description']):
+checks tweet['place']['full_name']
+
+### `user_description_contains` post filter:
 
 This post filter is for matching words or phrases to the text inside a user's description field.
 
@@ -131,7 +135,9 @@ So to request this post filter you would say something like in an email:
 
 " For the user_description post filter get me these terms: 'Cow', 'moon dance' "
 
-### `user_location_contains` post filter (checks tweet['user']['location']):
+checks tweet['user']['description']
+
+### `user_location_contains` post filter:
 
 This post filter is for matching words or phrases to the text inside a user's location field.
 
@@ -151,7 +157,9 @@ So to request this post filter you would say something like in an email:
 
 " For the user_location_contains post filter get me these terms: 'San Francisco', 'The surface of the sun' "
 
-### `within_geobox` post filter (checks to see if a tweet is geotagged and within the give box):
+checks tweet['user']['location']
+
+### `within_geobox` post filter:
 
 within_geobox(tweet, -75.280303, 39.8670041, -74.9557629, 40.1379919) would match geotagged tweets within the box given by those four coordinates.
 
