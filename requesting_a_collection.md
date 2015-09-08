@@ -1,13 +1,13 @@
 How to properly request to start collection 
 ===========================================================
 
-##Collecting Terms in Tweets (track) - For us to start a collection we need two things to collect TERMS in tweets:
+#Collecting Terms in Tweets (track) - For us to start a collection we need two things to collect TERMS in tweets:
 
-###1. We need the terms you want collected from twitter.
+##1. We need the terms you want collected from twitter.
 
 Here's how the logic works for getting raw tweets from twitter, we can:
 
-1 Get tweets containing "good" AND "world" by giving the streaming API an input like so "good world" -> spaces between words look for BOTH words in a tweet.
+###1 Get tweets containing "good" AND "world" by giving the streaming API an input like so "good world" -> spaces between words look for BOTH words in a tweet.
 
 So if you wanted to look for the words "good" AND "world" in a tweet you could give us an input like so:
 
@@ -19,7 +19,7 @@ or a tweet like so:
 
 "I love clouds; this is a good world." 
 
-2 Get tweets containing "good" OR "world" by giving the streaming API an input like so "good, world" -> commas between words look for EITHER word in a tweet. This will return tweets with one of the terms or BOTH of the terms. It is a logical OR, not an exclusive XOR. 
+##2 Get tweets containing "good" OR "world" by giving the streaming API an input like so "good, world" -> commas between words look for EITHER word in a tweet. This will return tweets with one of the terms or BOTH of the terms. It is a logical OR, not an exclusive XOR. 
 
 So if you wanted to look for the words "good" OR "world" in a tweet you could give us an input like so:
 
