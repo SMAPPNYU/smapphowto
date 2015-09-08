@@ -141,6 +141,49 @@ which would collect tweets from those user ids.
 
 " Good morning bounty hunters! Can I get a collection X_Y_Z with this geo box: [-75.280303, 39.8670041, -74.9557629, 40.1379919] "
 
+#Template
+
+##So a full request to start a collection would look something like this:
+
+Can you guys get tweets that these terms for me: (`track`)
+
+'good society', 'dystopian, world'
+
+and make sure they are from from these user ids: (`follow`)
+
+'1234567', '7654321'
+
+and make sure they are from within this geo box: (`geo`)
+
+[-122.75, 36.8, -121.75, 37.8] (San Francisco)
+
+and this one: 
+
+[-74, 40, -73, 41] (New York)
+
+Please add these post filters:
+
+`field_contains`:
+
+'crazy kittens', 'pastries are good'
+
+`field_contains_case_sensitive`:
+
+'Mayor DeBlasio'
+
+`place_name_contains`:
+
+'New York', 'Long Island'
+
+`user_description_contains`:
+
+'rowdy', 'the mayor'
+
+`user_location_contains`:
+
+'New York', 'NYC', 'City Where Dreams are Made'
+
+
 
 
 
