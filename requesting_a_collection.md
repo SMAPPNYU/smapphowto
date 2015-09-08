@@ -44,11 +44,11 @@ Post filters are a way for you to enforce certiain rules onto a tweet that you c
 
 One way to use this is to enter keywords/phrases you want matched like so:
 
-field_contains(tweet, 'NYC', 'good society') would match the word NYC and the phrase NYC on the post filter.
+field_contains(tweet, 'NYC', 'good society') - (checks tweet['text']) would match the word NYC and the phrase NYC on the post filter.
 
 You can also use it to match fields on the twitter object like the screen name or userid:
 
-field_contains(tweet, 'user.screen_name', 'bob', 'alice')
+field_contains(tweet, 'user.screen_name', 'bob', 'alice') - (checks tweet['user']['screen_name'])
 
 Would setup a post filter to match screen_names (twitter handles) that had the string "bob" or "alice" inside of them:
 
@@ -66,7 +66,7 @@ So to request this post filter you would say something like in an email:
 
 Same as above.
 
-### `place_name_contains` post filter:
+### `place_name_contains` post filter (checks tweet['place']['full_name']):
 
 This post filter will only keep tweets where the `place` field of a twitter object.
 
@@ -78,8 +78,45 @@ So to request this post filter you would say something like in an email:
 
 " For the place_name_contains post filder get me these terms: 'Kiev', 'Paris', 'Berlin' "
 
-### `user_description_contains`
+### `user_description_contains` post filter (checks tweet['user']['description']):
 
+This post filter is for matching words or phrases to the text inside a user's description field.
+
+user_descriptions_contains(tweet, 'Cow', 'moon dance') would match user descriptions with the words 'Cow' and the phrase 'moon dance' like so:
+
+"I am a cow and I do a little moon dance." or "I am a cow."" or "I do a little moon dance."
+
+So to request this post filter you would say something like in an email:
+
+" For the user_description post filter get me these terms: 'Cow', 'moon dance' "
+
+### `user_location_contains` post filter (checks tweet['user']['location']):
+
+This post filter is for matching words or phrases to the text inside a user's location field.
+
+user_location_contains(tweet, 'The surface of the sun', 'San Francisco') would match user stated locations like so:
+
+"I live on the surface of the sun AKA San Francisco" 
+
+or
+
+"San Francisco"
+
+or
+
+"The surface of the sun"
+
+So to request this post filter you would say something like in an email:
+
+" For the user_location_contains post filter get me these terms: 'San Francisco', 'The surface of the sun' "
+
+### `within_geobox` post filter (checks to see if a tweet is geotagged and within the give box):
+
+within_geobox(tweet, -75.280303, 39.8670041, -74.9557629, 40.1379919) would match geotagged tweets within the box given by those four coordinates.
+
+So to request this post filter you would say something like in an email:
+
+" For the within_geobox post filter get me geotagges tweets within this box: [-75.280303, 39.8670041, -74.9557629, 40.1379919]"
 
 ##Collecting Tweets from Specific Users (follow) - For us to start collection we need one thing:
 
