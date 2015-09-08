@@ -19,6 +19,7 @@ or a tweet like so:
 
 "I love clouds; this is a good world." 
 
+
 ###2 - Get tweets containing "good" OR "world" by giving the streaming API an input like so "good, world" -> commas between words look for EITHER word in a tweet. This will return tweets with one of the terms or BOTH of the terms. It is a logical OR, not an exclusive XOR. 
 
 So if you wanted to look for the words "good" OR "world" in a tweet you could give us an input like so:
@@ -34,6 +35,12 @@ or a tweet like so:
 or:
 
 "God is good."
+
+So to request for tweets with these terms to be collected on the twitter streaming API like in an email you would say something like:
+
+" Good morning guys, could I get these terms collected on: 'good society', 'dystopian, evil', 'unjust, system' "
+
+which would collect tweets with 'good' AND 'society', 'dystopian' OR 'evil' (or both), 'unjust' OR 'system' (or both).
 
 
 ##2. We need a list of terms you want post filtered. 
@@ -122,10 +129,17 @@ So to request this post filter you would say something like in an email:
 
 ##1. We need a list of user ids you would like to follow.
 
+So to request for tweets from these user ids to be collected on the twitter streaming API like in an email you would say something like:
+
+" Hey amigos can we get a collection called X with tweets from these user ids: '1234567', '7654321', 'etc' "
+
+which would collect tweets from those user ids.
 
 #Collecting Tweets from a specific Geobox (geo) - For us to start a collection we need one thing:
 
 ##1. We need the geobox in terms of geographic coordinates you would like the tweets collected in.
+
+" Good morning bounty hunters! Can I get a collection X_Y_Z with this geo box: [-75.280303, 39.8670041, -74.9557629, 40.1379919] "
 
 
 
