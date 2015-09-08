@@ -209,7 +209,9 @@ Please add these post filters:
 
 `field_contains`:
 
-'crazy kittens', 'pastries are good'
+name of field: (usually 'text')
+
+matching phrases: 'crazy kittens', 'pastries are good'
 
 `field_contains_case_sensitive`:
 
