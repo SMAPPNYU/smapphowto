@@ -124,6 +124,7 @@ Point the notebook file visualize.ipynb at the correct folder where the files ab
      #tab key completes file paths etc. press twice to see multiple options 
      #pbs stands for portable batch system files which are scripts to set up and launch jobs on any cluster
 
+###authors
 
 written by by <a href="https://github.com/aas754">Alex Siegel</a>
 edited by <a href="https://github.com/yvan">Yvan Scher</a>

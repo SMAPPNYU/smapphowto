@@ -18,3 +18,7 @@ javascript
 
 ###twitter_query_scripts (for querying the twitter API)
 We currently have one template for making scripts that query the twitter API.
+
+###authors
+
+written by <a href="https://github.com/yvan">Yvan Scher</a>

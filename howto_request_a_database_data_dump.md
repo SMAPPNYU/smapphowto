@@ -64,4 +64,6 @@ It needs to have user location be set to new york.
 
 It needs to be all geotagged tweets.
 
+###authors
+
 written by <a href="https://github.com/yvan">Yvan Scher</a>
