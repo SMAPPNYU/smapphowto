@@ -1,6 +1,4 @@
-#SMaPP Cluster Instructions
-
-by Alex Siegel 
+#SMaPP Cluster Instructions by Alex Siegel
 
 ##PROGRAMS YOU WILL NEED TO DOWNLOAD ONTO THE CLUSTER 
 
