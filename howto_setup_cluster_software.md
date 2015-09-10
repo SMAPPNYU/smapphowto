@@ -14,11 +14,11 @@
  
 
 ##PROGRAMS YOU WILL NEED TO DOWNLOD ON YOUR MACHINE
-	#GitHub (enables you to edit/push code to github) 
+	#GitHub Client(enables you to edit/push code to github) 
 
 ##LOG INTO CLUSTER WITHOUT TUNNELING 
 	#Open new terminal window
-	ssh aas754@hpc.nyu.edu #use net ID
+	ssh YOUR_NET_ID_HERE@hpc.nyu.edu 
     #enter NYU net ID password when prompted
     ssh mercer
     #enter NYU net ID password when prompted 
@@ -35,7 +35,7 @@
 	ssh hpctunnel
 	#enter NYU net ID password when prompted
 	#Open second terminal window and type scp mercer:[FILE PATH ON CLUSTER] [FILE PATH ON MACHINE]
-	scp mercer:~/history-jul1.txt /Users/aas754/Dropbox/
+	scp mercer:~/history-jul1.txt /Users/YOUR_NET_ID_HERE/Dropbox/
 	#enter NYU net ID password when prompted and file will download to the location specified 
 
 ##START INTERACTIVE SESSION (can't do long-running jobs on login node so anytime you're dumping data it should be done on the interactive node) 
@@ -53,7 +53,7 @@
 
 
 ##CHECK TO SEE IF JOB IS RUNNING WITHOUT ERRORS
-     qstat -u aas754 #insert your netID where I have aas754
+     qstat -u YOUR_NET_ID_HERE #insert your netID where I have YOUR_NET_ID_HERE
      #Q means job is qued, C means job is complete and R means job is running
      #Once job is running: 
      cd #change directory to home
@@ -79,7 +79,7 @@
      # -i gives input file, -c is the command to be executed and -o shows where to put the output file 
 
 ##SIMPLIFIED VERSION OF DUMPING WHEN EVERYTHING IS SET UP
-ssh aas754@hpc.nyu.edu #use net ID
+ssh YOUR_NET_ID_HERE@hpc.nyu.edu #use net ID
     #enter NYU net ID password when prompted
     ssh mercer
     #enter NYU net ID password when prompted 
@@ -87,7 +87,7 @@ ssh aas754@hpc.nyu.edu #use net ID
 nano ~/Sandbox/cluster/simple_mongodump.pbs
 #edit the tweet collection you want (so change to 19, 20, etc)
 qsub -V ~/Sandbox/cluster/simple_mongodump.pbs #runs job on cluster
-qstat -u aas754 #checks job is running
+qstat -u YOUR_NET_ID_HERE #checks job is running
 cd jobs
 ls -la #copy most recent job name
 less MOSTRECENTJOB
@@ -126,5 +126,5 @@ Point the notebook file visualize.ipynb at the correct folder where the files ab
 
 ###authors
 
-written by by <a href="https://github.com/aas754">Alex Siegel</a>
+written by by <a href="https://github.com/YOUR_NET_ID_HERE">Alex Siegel</a>
 edited by <a href="https://github.com/yvan">Yvan Scher</a>
