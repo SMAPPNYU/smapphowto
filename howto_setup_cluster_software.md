@@ -101,11 +101,11 @@ python merge_results.py -i ~/data/ArabEvents*.csv #merges data files
 Point the notebook file visualize.ipynb at the correct folder where the files above are found, and run it to produce the graphs.
 
 ##EDITING GITHUB CODE (on your computer, not the cluster)
-#1) Open github program on your computer
-#2) clone project repository
-#3) click plus
-#4) find document to edit
-#5) after editing create summary of your changes, click "commit to master", click "sync" button 
+###1- Open github program on your computer
+###2- clone project repository
+###3- click plus
+###4- find document to edit
+###5- after editing create summary of your changes, click "commit to master", click "sync" button 
 
 ##USEFUL COMMANDS & JARGON
 	 curl -O #this followed by a web address allows you to download programs
