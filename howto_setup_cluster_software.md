@@ -1,4 +1,4 @@
-#SMaPP Cluster Instructions by Alex Siegel
+#How to setup NYU HPC cluster software
 
 ##PROGRAMS YOU WILL NEED TO DOWNLOAD ONTO THE CLUSTER 
 
@@ -125,4 +125,5 @@ Point the notebook file visualize.ipynb at the correct folder where the files ab
      #pbs stands for portable batch system files which are scripts to set up and launch jobs on any cluster
 
 
-
+written by by <a href="https://github.com/aas754">Alex Siegel</a>
+edited by <a href="https://github.com/yvan">Yvan Scher</a>

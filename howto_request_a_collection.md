@@ -229,9 +229,4 @@ matching phrases: 'crazy kittens', 'pastries are good'
 
 'New York', 'NYC', 'City Where Dreams are Made'
 
-
-
-
-
-
-
+written by <a href="https://github.com/yvan">Yvan Scher</a>
