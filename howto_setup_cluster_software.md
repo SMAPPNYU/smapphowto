@@ -1,4 +1,4 @@
-#SMaPP Cluster Instructions# 
+#SMaPP Cluster Instructions
 
 by Alex Siegel 
 
