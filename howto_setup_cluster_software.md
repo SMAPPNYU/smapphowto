@@ -96,31 +96,31 @@
     # -i gives input file, -c is the command to be executed and -o shows where to put the output file 
 
 ##SIMPLIFIED VERSION OF DUMPING WHEN EVERYTHING IS SET UP
-`ssh YOUR_NET_ID_HERE@hpc.nyu.edu` 
-    #enter NYU net ID password when prompted
-`ssh mercer`
-    #enter NYU net ID password when prompted 
+	`ssh YOUR_NET_ID_HERE@hpc.nyu.edu` 
+	    #enter NYU net ID password when prompted
+	`ssh mercer`
+	    #enter NYU net ID password when prompted 
 
-`nano ~/Sandbox/cluster/simple_mongodump.pbs`
-#edit the tweet collection you want (so change to 19, 20, etc)
-#runs job on cluster
-`qsub -V ~/Sandbox/cluster/simple_mongodump.pbs` 
-#check that a job is running
-`qstat -u YOUR_NET_ID_HERE` 
-`cd jobs`
-#copy most recent job name
-`ls -la` 
-`less MOSTRECENTJOB`
+	`nano ~/Sandbox/cluster/simple_mongodump.pbs`
+	#edit the tweet collection you want (so change to 19, 20, etc)
+	#runs job on cluster
+	`qsub -V ~/Sandbox/cluster/simple_mongodump.pbs` 
+	#check that a job is running
+	`qstat -u YOUR_NET_ID_HERE` 
+	`cd jobs`
+	#copy most recent job name
+	`ls -la` 
+	`less MOSTRECENTJOB`
 
 ##Then once all files are dumped....
-`~/anaconda/bin/python ~/Sandbox/cluster/simple_launch_n_jobs.py -i /scratch/smapp/arab_events_all_6_19/*.bson -c '~/anaconda/bin/python ~/Projects/data-reports/2015_6_19-ArabEvents-ISIS/get_data_for_split.py -o /scratch/smapp/arabevents-isis-data-report'`
+	`~/anaconda/bin/python ~/Sandbox/cluster/simple_launch_n_jobs.py -i /scratch/smapp/arab_events_all_6_19/*.bson -c '~/anaconda/bin/python ~/Projects/data-reports/2015_6_19-ArabEvents-ISIS/get_data_for_split.py -o /scratch/smapp/arabevents-isis-data-report'`
 
 ##ONCE DATA HAS RUN ON CLUSTER...
-#downloads all data to your computer
-`rsync --progress mercer:/scratch/smapp/results/arabevents-isis-data-report/*.csv ~/data/`
-#merges data files 
-`python merge_results.py -i ~/data/ArabEvents*.csv` 
-Point the notebook file visualize.ipynb at the correct folder where the files above are found, and run it to produce the graphs.
+	#downloads all data to your computer
+	`rsync --progress mercer:/scratch/smapp/results/arabevents-isis-data-report/*.csv ~/data/`
+	#merges data files 
+	`python merge_results.py -i ~/data/ArabEvents*.csv` 
+	Point the notebook file visualize.ipynb at the correct folder where the files above are found, and run it to produce the graphs.
 
 ##EDITING GITHUB CODE (on your computer, not the cluster)
 ###1- Open github program on your computer
@@ -130,7 +130,7 @@ Point the notebook file visualize.ipynb at the correct folder where the files ab
 ###5- after editing create summary of your changes, click "commit to master", click "sync" button 
 
 ##USEFUL COMMANDS & JARGON
- 	#this followed by a web address allows you to download programs
+	#this followed by a web address allows you to download programs
 	`curl -O`
 	#change from host we're on to a different host
 	`ssh` 
@@ -145,13 +145,13 @@ Point the notebook file visualize.ipynb at the correct folder where the files ab
 	`grep` #grabs regular expression---used to search text for lines containing a match to the given strings or words
 	#the command used for job submission to the cluster
 	qsub 
-    -i #input
-    -c #command to be executed
-    -o #output
-    #stops job running on cluster 
-    `qdel JOBNAME` 
-    #tab key completes file paths etc. press twice to see multiple options 
-    #pbs stands for portable batch system files which are scripts to set up and launch jobs on any cluster
+	-i #input
+	-c #command to be executed
+	-o #output
+	#stops job running on cluster 
+	`qdel JOBNAME` 
+	#tab key completes file paths etc. press twice to see multiple options 
+	#pbs stands for portable batch system files which are scripts to set up and launch jobs on any cluster
 
 ###authors
 
