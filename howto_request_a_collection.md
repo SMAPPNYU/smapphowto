@@ -163,6 +163,8 @@ checks tweet['user']['location']
 
 within_geobox(tweet, -75.280303, 39.8670041, -74.9557629, 40.1379919) would match geotagged tweets within the box given by those four coordinates.
 
+A valid geobox for the twitter contains two pairs of coordinates (4 numbers) with the Southwest (SW) corner coming first and the Northeast (NE) cornder coming next. 
+
 So to request this post filter you would say something like in an email:
 
 " For the within_geobox post filter get me geotagges tweets within this box: [-75.280303, 39.8670041, -74.9557629, 40.1379919]"
@@ -182,6 +184,8 @@ which would collect tweets from those user ids.
 #Collecting Tweets from a specific Geobox (geo) - For us to start a collection we need one thing:
 
 ##1. We need the geobox in terms of geographic coordinates you would like the tweets collected in.
+
+A valid geobox for the twitter contains two pairs of coordinates (4 numbers) with the Southwest (SW) corner coming first and the Northeast (NE) cornder coming next. 
 
 " Good morning bounty hunters! Can I get a collection X_Y_Z with this geo box: [-75.280303, 39.8670041, -74.9557629, 40.1379919] "
 
