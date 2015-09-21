@@ -25,3 +25,61 @@ http://docs.mongodb.org/master/tutorial/deploy-shard-cluster/
 
 Below is a list of steps to follow to get a test sharded database up and running on your machine:
 
+
+##(0) Creating a security key so that servers run securely.
+
+Run these commands in a directory where you want to store your mongodb server keys:
+
+```sh
+mkdir keyfiles
+
+cd keyfiles
+
+openssl rand -base64 741 > mongodb-keyfile
+
+chmod 600 mongodb-keyfile
+```
+
+
+##(1) Setting up a replica set (repeat for the #ofshards/#ofreplicasets you will have:
+
+See the docs here: <a href="http://docs.mongodb.org/master/tutorial/deploy-replica-set-for-testing/">http://docs.mongodb.org/master/tutorial/deploy-replica-set-for-testing/</a>
+
+1. Create data folders for each mongod instance that will run on a replica set.
+
+Run this command to create three folder paths (-p creates missing folders).
+
+```sh
+mkdir -p srv/mongodb/rs0-0 srv/mongodb/rs0-1 srv/mongodb/rs0-2
+```
+
+2. Start a TMUX session with:
+
+```sh
+tmux
+```
+
+3. Then do ctrl+b then release keyboard then type ". Do this as many times as you need for each mongod instance in the replica set.
+
+4. Then use ctrl+b then release keyboard then type o. this will let you jump between the windows in your tmux session.
+
+5. In each window of the tmux session start a mongod instance with the followin commands:
+
+```sh
+##first mongod in the replica set first window command
+mongod --dbpath srv/mongodb/rs0-0 --port 27018 --replSet rs0 --smallfiles --oplogSize 128 -—keyFile keyfiles/mongodb-keyfile
+```
+```sh
+##second mongod in the replica set second window command
+mongod --dbpath srv/mongodb/rs0-1 --port 27019 --replSet rs0 --smallfiles --oplogSize 128 -—keyFile keyfiles/mongodb-keyfile
+```
+```sh
+##third mongod in the replica set third window command
+mongod --dbpath srv/mongodb/rs0-2 --port 27020 --replSet rs0 --smallfiles --oplogSize 128 -—keyFile keyfiles/mongodb-keyfile
+```
+
+then use ctrl+b then release keyboard then type d. This will detach your session and let it run on its own.
+
+
+
+
