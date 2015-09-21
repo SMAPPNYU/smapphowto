@@ -30,7 +30,7 @@ Below is a list of steps to follow to get a test sharded database up and running
 
 Run these commands in a directory where you want to store your mongodb server keys:
 
-```bash
+```sh
 mkdir keyfiles
 
 cd keyfiles
@@ -49,13 +49,13 @@ See the docs here: <a href="http://docs.mongodb.org/master/tutorial/deploy-repli
 
 Run this command to create three folder paths (-p creates missing folders).
 
-```bash
+```sh
 mkdir -p srv/mongodb/rs0-0 srv/mongodb/rs0-1 srv/mongodb/rs0-2
 ```
 
 2. Start a TMUX session with:
 
-```bash
+```sh
 tmux
 ```
 
@@ -67,19 +67,19 @@ tmux
 
 (first mongod in the replica set first window command)
 
-```bash
+```sh
 mongod --dbpath srv/mongodb/rs0-0 --port 27018 --replSet rs0 --smallfiles --oplogSize 128 -—keyFile keyfiles/mongodb-keyfile
 ```
 
 (second mongod in the replica set second window command)
 
-```bash
+```sh
 mongod --dbpath srv/mongodb/rs0-1 --port 27019 --replSet rs0 --smallfiles --oplogSize 128 -—keyFile keyfiles/mongodb-keyfile
 ```
 
 (third mongod in the replica set third window command)
 
-```bash
+```sh
 mongod --dbpath srv/mongodb/rs0-2 --port 27020 --replSet rs0 --smallfiles --oplogSize 128 -—keyFile keyfiles/mongodb-keyfile
 ```
 
@@ -87,23 +87,23 @@ mongod --dbpath srv/mongodb/rs0-2 --port 27020 --replSet rs0 --smallfiles --oplo
 
 7. Now log into mongod instance that you want to be the primary node.
 
-```bash
+```sh
 mongo localhost:27018
 ```
 
 8. Create the replicaset on the primary node.
 
-```bash
+```sh
 rs.initiate()
 ```
 
 9. Add the other two mongod instances running to the replicaset.
 
-```bash
+```sh
 rs.add(localhost:27019)
 ```
 
-```bash
+```sh
 rs.add(localhost:27020)
 ```
 
