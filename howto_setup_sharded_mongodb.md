@@ -204,4 +204,6 @@ db.COLLECTIONNAME.createIndex({_id:"hashed"})
 sh.shardCollection("shardtest.shardedcollection", {_id: "hashed"})
 ```
 
+###authors
+
 written by <a href="https://github.com/yvan">Yvan Scher</a>
