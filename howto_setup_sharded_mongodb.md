@@ -45,7 +45,7 @@ chmod 600 mongodb-keyfile
 
 See the docs here: <a href="http://docs.mongodb.org/master/tutorial/deploy-replica-set-for-testing/">http://docs.mongodb.org/master/tutorial/deploy-replica-set-for-testing/</a>
 
-1.Create data folders for each mongod instance that will run on a replica set.
+1 - Create data folders for each mongod instance that will run on a replica set.
 
 Run this command to create three folder paths (-p creates missing folders).
 
@@ -53,17 +53,17 @@ Run this command to create three folder paths (-p creates missing folders).
 mkdir -p srv/mongodb/rs0-0 srv/mongodb/rs0-1 srv/mongodb/rs0-2
 ```
 
-2.Start a TMUX session with:
+2 - Start a TMUX session with:
 
 ```sh
 tmux
 ```
 
-3.Then do ctrl+b then release keyboard then type ". Do this as many times as you need for each mongod instance in the replica set.
+3 - Then do ctrl+b then release keyboard then type ". Do this as many times as you need for each mongod instance in the replica set.
 
-4.Then use ctrl+b then release keyboard then type "o". this will let you jump between the windows in your tmux session.
+4 - Then use ctrl+b then release keyboard then type "o". this will let you jump between the windows in your tmux session.
 
-5.In each window of the tmux session start a mongod instance with the followin commands:
+5 - In each window of the tmux session start a mongod instance with the followin commands:
 
 (first mongod in the replica set first window command)
 
@@ -83,21 +83,21 @@ mongod --dbpath srv/mongodb/rs0-1 --port 27019 --replSet rs0 --smallfiles --oplo
 mongod --dbpath srv/mongodb/rs0-2 --port 27020 --replSet rs0 --smallfiles --oplogSize 128 -—keyFile keyfiles/mongodb-keyfile
 ```
 
-6.Then use ctrl+b then release keyboard then type "d". This will detach your session and let it run on its own.
+6 - Then use ctrl+b then release keyboard then type "d". This will detach your session and let it run on its own.
 
-7.Now log into mongod instance that you want to be the primary node.
+7 - Now log into mongod instance that you want to be the primary node.
 
 ```sh
 mongo localhost:27018
 ```
 
-8.Create the replicaset on the primary node.
+8 - Create the replicaset on the primary node.
 
 ```sh
 rs.initiate()
 ```
 
-9.Add the other two mongod instances running to the replicaset.
+9 - Add the other two mongod instances running to the replicaset.
 
 ```sh
 rs.add(localhost:27019)
