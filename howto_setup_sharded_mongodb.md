@@ -61,24 +61,51 @@ tmux
 
 3. Then do ctrl+b then release keyboard then type ". Do this as many times as you need for each mongod instance in the replica set.
 
-4. Then use ctrl+b then release keyboard then type o. this will let you jump between the windows in your tmux session.
+4. Then use ctrl+b then release keyboard then type "o". this will let you jump between the windows in your tmux session.
 
 5. In each window of the tmux session start a mongod instance with the followin commands:
 
+(first mongod in the replica set first window command)
+
 ```sh
-##first mongod in the replica set first window command
 mongod --dbpath srv/mongodb/rs0-0 --port 27018 --replSet rs0 --smallfiles --oplogSize 128 -—keyFile keyfiles/mongodb-keyfile
 ```
+
+(second mongod in the replica set second window command)
+
 ```sh
-##second mongod in the replica set second window command
 mongod --dbpath srv/mongodb/rs0-1 --port 27019 --replSet rs0 --smallfiles --oplogSize 128 -—keyFile keyfiles/mongodb-keyfile
 ```
+
+(third mongod in the replica set third window command)
+
 ```sh
-##third mongod in the replica set third window command
 mongod --dbpath srv/mongodb/rs0-2 --port 27020 --replSet rs0 --smallfiles --oplogSize 128 -—keyFile keyfiles/mongodb-keyfile
 ```
 
-then use ctrl+b then release keyboard then type d. This will detach your session and let it run on its own.
+6. Then use ctrl+b then release keyboard then type "d". This will detach your session and let it run on its own.
+
+7. Now log into mongod instance that you want to be the primary node.
+
+```sh
+mongo localhost:27018
+```
+
+8. Create the replicaset on the primary node.
+
+```sh
+rs.initiate()
+```
+
+9. Add the other two mongod instances running to the replicaset.
+
+```sh
+rs.add(localhost:27019)
+```
+
+```sh
+rs.add(localhost:27020)
+```
 
 
 
