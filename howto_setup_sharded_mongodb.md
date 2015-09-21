@@ -1,3 +1,5 @@
+#How to setup a sharded mongodb.
+
 Let's take a quick step back: Why do we shard in the first place?
 
 Bascially sharding is a great way to do something called "horizontal scaling."" Without sharding i need to maintain a large number of servers and each collection is stored on one server. So if the Canada_Election collection would be stored on serverone, and I'd have to log into the mongod instance running on serverone and grab the collection from there. If another collection Canada_Geobox is stored on another server I have to go and track it down there.  This gets harder and harder as we increase the number of servers. If would be cool if we could just keep all the data on one server, but servers have capacity limits (if I have 100,000 databases I'm constantly writing to and reading from one server can't handle that so well) and space limits (server hard drive/disks fill up, self explanatory). So we want a way to treat all of our data as if it was one one server, but in reality we want to be able to have it on different servers so we can read/write it efficiently and so we can add extra servers when we need more space.
@@ -143,3 +145,63 @@ mongod --configsvr --dbpath configdata1/configdb/ --port 27025 -—keyFile keyfi
 ```sh
 mongod --configsvr --dbpath configdata2/configdb/ --port 27026 -—keyFile keyfiles/mongodb-keyfile
 ```
+
+4 - Then use ctrl+b then release keyboard then type "d". This will detach your session and let it run on its own.
+
+##(3) Start up a mongos instance in a tmux session and make the shard.
+
+1 - Run tmux.
+
+```sh
+tmux
+```
+
+2 - Start up a mongos instance inside that tmux session.
+
+```sh
+mongos —configdb localhost:27023,localhost:27024,localhost:27025 --port 27026
+```
+
+3 - Then use ctrl+b then release keyboard then type "d". This will detach your session and let it run on its own.
+
+4 - Log into the mongos instance the way you would log into a mongod.
+
+```sh
+mongo localhost:27026
+```
+
+5 - Add each replica set as a shard.
+
+```sh
+sh.addShard("rs0/localhost:27017,localhost:27018,localhost:27019")
+```
+
+6 - Check the status of the sharded cluster to see if all replica sets are properly added as shards.
+
+```sh
+sh.addShard("rs0/localhost:27017,localhost:27018,localhost:27019")
+```
+
+##(4) Enable sharding on a database and shard a particular collection inside of that database.
+
+1 - Create a collection on a database and enable sharding on the right database.
+
+```sh
+use DATABASENAME
+db.createCollection("COLLECTIONNAME")
+sh.enableSharding("DATABASENAME")
+```
+
+2 - Create a hashed index on the a field of your choosing (here I have chosen the "_id" field to make the hashed index).
+
+```sh
+db.COLLECTIONNAME.createIndex({_id:"hashed"})
+```
+
+3 - Shard the collection on that database.
+
+```sh
+sh.shardCollection("shardtest.shardedcollection", {_id: "hashed"})
+```
+
+written by <a href="https://github.com/yvan">Yvan Scher</a>
