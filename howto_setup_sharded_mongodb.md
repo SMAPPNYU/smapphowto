@@ -40,8 +40,7 @@ openssl rand -base64 741 > mongodb-keyfile
 chmod 600 mongodb-keyfile
 ```
 
-
-##(1) Setting up a replica set (repeat for the #ofshards/#ofreplicasets you will have:
+##(1) Setting up a replica set (repeat for the #ofshards/#ofreplicasets you will have.
 
 See the docs here: <a href="http://docs.mongodb.org/master/tutorial/deploy-replica-set-for-testing/">http://docs.mongodb.org/master/tutorial/deploy-replica-set-for-testing/</a>
 
@@ -107,6 +106,40 @@ rs.add(localhost:27019)
 rs.add(localhost:27020)
 ```
 
+10 - Repeat 1 to 9 for however many replica sets you may have.
 
+##(2) Setting up the three config servers.
 
+See the docs here: <a href="http://docs.mongodb.org/master/tutorial/deploy-shard-cluster/">http://docs.mongodb.org/master/tutorial/deploy-shard-cluster/</a>
 
+1 - Create separate data folder paths for each config server.
+
+```sh
+mkdir -p configdata0/configdb configdata1/configdb configdata2/configdb
+```
+
+2 - Start a TMUX session and make three windows inside this session with ctrl+b and ".
+
+```sh
+tmux
+```
+
+3 - In each windown of the tmux session navigate using ctrl+b and "o" and run:
+
+(first config server)
+
+```sh
+mongod --configsvr --dbpath configdata0/configdb/ --port 27024 -—keyFile keyfiles/mongodb-keyfile
+```
+
+(second config server)
+
+```sh
+mongod --configsvr --dbpath configdata1/configdb/ --port 27025 -—keyFile keyfiles/mongodb-keyfile
+```
+
+(third config server)
+
+```sh
+mongod --configsvr --dbpath configdata2/configdb/ --port 27026 -—keyFile keyfiles/mongodb-keyfile
+```
