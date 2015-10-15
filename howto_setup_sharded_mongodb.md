@@ -101,11 +101,11 @@ rs.initiate()
 9 - Add the other two mongod instances running to the replicaset.
 
 ```sh
-rs.add(localhost:27019)
+rs.add("localhost:27019")
 ```
 
 ```sh
-rs.add(localhost:27020)
+rs.add("localhost:27020")
 ```
 
 10 - Repeat 1 to 9 for however many replica sets you may have.
