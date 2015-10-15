@@ -109,7 +109,7 @@ rs.add("localhost:27020")
 ```
 
 *note:*  Make sure that before you add members to the replica set in step 9 that you have created a user who can do that. The best way to go is to 
-<a href="http://docs.mongodb.org/manual/tutorial/add-admin-user/">create a root user as per mongodb docs</a>.
+<a href="http://docs.mongodb.org/manual/tutorial/add-admin-user/">create a root user as per mongodb docs</a>. This involves logging into th db usually with no login. `mongo localhost:PORT`, then typing `use admin`, then doing your `db.createUser({user:"USERNAME", pwd:"PASSWORD", roles:[{role:"root", db:"admin"}]})`
 
 10 - Repeat 1 to 9 for however many replica sets you may have.
 
@@ -173,16 +173,26 @@ mongos —configdb localhost:27023,localhost:27024,localhost:27025 --port 27026 
 mongo localhost:27026
 ```
 
+*note*: login to the mongos isntance as the user you created in step 9. above.
+
 5 - Add each replica set as a shard.
 
 ```sh
 sh.addShard("rs0/localhost:27017,localhost:27018,localhost:27019")
 ```
 
+*note* : you might get an error message like so:
+
+```
+ "can't use localhost as a shard since all shards need to communicate. either use all shards and configdbs in localhost or all in actual IPs  host: localhost:27018 isLocalHost:1"
+```
+
+this means that you need to use your server's actual name. You can check for this by logging out of the mongos instance ( type 'exit').
+
 6 - Check the status of the sharded cluster to see if all replica sets are properly added as shards.
 
 ```sh
-sh.addShard("rs0/localhost:27017,localhost:27018,localhost:27019")
+sh.status()
 ```
 
 ##(4) Enable sharding on a database and shard a particular collection inside of that database.
