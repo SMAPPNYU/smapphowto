@@ -108,6 +108,9 @@ rs.add("localhost:27019")
 rs.add("localhost:27020")
 ```
 
+* note:  Make sure that before you add members to the replica set in step 9 that you have created a user who can do that. The best way to go is to 
+<a href="http://docs.mongodb.org/manual/tutorial/add-admin-user/">create a root user as per mongodb docs</a>.
+
 10 - Repeat 1 to 9 for however many replica sets you may have.
 
 ##(2) Setting up the three config servers.
