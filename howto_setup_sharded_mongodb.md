@@ -217,6 +217,18 @@ db.COLLECTIONNAME.createIndex({_id:"hashed"})
 sh.shardCollection("shardtest.shardedcollection", {_id: "hashed"})
 ```
 
+###helpful docs
+
+https://groups.google.com/forum/#!topic/mongodb-user/QZK4ExMU838
+https://groups.google.com/forum/#!topic/mongodb-user/3uq7qYEojsA
+http://docs.mongodb.org/manual/tutorial/add-admin-user/
+http://docs.mongodb.org/manual/tutorial/expand-replica-set/
+
+(for setting up a test shard you only need 1 shard, 1 config server):
+
+http://docs.mongodb.org/manual/core/sharded-cluster-architectures-test/
+
 ###authors
 
 written by <a href="https://github.com/yvan">Yvan Scher</a>
+
