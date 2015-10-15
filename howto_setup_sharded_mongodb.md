@@ -162,7 +162,7 @@ tmux
 2 - Start up a mongos instance inside that tmux session.
 
 ```sh
-mongos —configdb localhost:27023,localhost:27024,localhost:27025 --port 27026
+mongos —configdb localhost:27023,localhost:27024,localhost:27025 --port 27026 --keyFile keyfiles/mongodb-keyfile
 ```
 
 3 - Then use ctrl+b then release keyboard then type "d". This will detach your session and let it run on its own.
