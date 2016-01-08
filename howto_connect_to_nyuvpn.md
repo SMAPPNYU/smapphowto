@@ -1,6 +1,6 @@
 How to connect to nyu's vpn (vpn.nyu.edu) from the command line in linux or OSX.
 
-On OSX Yosemite 10.5.5 and Ubuntu 
+On OSX Yosemite 10.5.5 and Ubuntu 14.04.3
 
 
 Install vpnc and openconnect
