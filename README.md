@@ -13,6 +13,9 @@ Setting up software and jobs on the NYU HPC cluster.</a>
 <a href="https://github.com/SMAPPNYU/smapphowto/blob/master/howto_setup_sharded_mongodb.md">
 Setting up a sharded mongodb cluster</a>
 
+<a href="https://github.com/SMAPPNYU/smapphowto/blob/master/howto_setup_sharded_mongodb.md">
+Setting up a streaming collection</a>
+
 ###authors
 
 written by <a href="https://github.com/yvan">Yvan Scher</a>
