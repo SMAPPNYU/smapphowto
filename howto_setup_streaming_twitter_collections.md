@@ -8,6 +8,8 @@ This can be a digital ocean server, a local server (like a workstation or resear
 
 ##(3) - Log into server with ssh and connect to NYU's vpn (if outside nyu).
 
+[NYU's vpn](https://github.com/SMAPPNYU/smapphowto/blob/master/howto_connect_to_nyuvpn.md)
+
 ##(4) - Setup a keyed login to hades using ssh-copy-id.
 
 ##(5) - Create the filter criteria file.

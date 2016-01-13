@@ -34,6 +34,7 @@ brew install openconnect
 ```
 
 Linux:
+
 ```bash
 sudo apt-get install openconnect vpnc
 ```
@@ -53,12 +54,19 @@ sudo openconnect --authgroup nyu-vpn vpn.nyu.edu
 
 and enter your password and username on the command line.
 
+Note: if you have problems on Linux try running the command with the 
+--no-xmlpost flag like so:
+
+```bash
+sudo openconnect --no-xmlpost --authgroup nyu-vpn vpn.nyu.edu
+```
+
 
 You can also find instructions at these resources/tutorials:
 
 [http://www.infradead.org/openconnect/manual.html](http://www.infradead.org/openconnect/manual.html)
-[https://wiki.archlinux.org/index.php/OpenConnect](http://www.infradead.org/openconnect/manual.html)
-[http://crashcourse.housegordon.org/OpenConnect.html](http://www.infradead.org/openconnect/manual.html)
+[https://wiki.archlinux.org/index.php/OpenConnect](https://wiki.archlinux.org/index.php/OpenConnect)
+[http://crashcourse.housegordon.org/OpenConnect.html](http://crashcourse.housegordon.org/OpenConnect.html)
 [http://askubuntu.com/questions/523407/ubuntu-equivalent-of-the-cisco-anyconnect-vpn-client](http://askubuntu.com/questions/523407/ubuntu-equivalent-of-the-cisco-anyconnect-vpn-client)
 
 authors
