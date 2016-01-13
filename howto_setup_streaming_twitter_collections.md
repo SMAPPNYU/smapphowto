@@ -6,15 +6,45 @@ This can be a digital ocean server, a local server (like a workstation or resear
 
 ##(2) - Go onto twitter app console, create app, get auth info.
 
+https://apps.twitter.com/
+
+then press `Create New App`
+
 ##(3) - Log into server with ssh and connect to NYU's vpn (if outside nyu).
 
-[NYU's vpn](https://github.com/SMAPPNYU/smapphowto/blob/master/howto_connect_to_nyuvpn.md)
+If you're new there's a great [digital ocean guide on ssh](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server-in-ubuntu).
+
+I also wrote a separate guide on how to command line connect to [NYU's vpn].(https://github.com/SMAPPNYU/smapphowto/blob/master/howto_connect_to_nyuvpn.md)
 
 ##(4) - Setup a keyed login to hades using ssh-copy-id.
 
+Check Operating System by typing `uname -a`.
+
+If you're running linux: you have ssh-copy-id.
+
+`ssh-copy-id username@remote_host`
+
+enter your password etc.
+
 ##(5) - Create the filter criteria file.
 
+Use this [script](https://github.com/SMAPPNYU/shellscripts#makefiltercriteriash)
+
+or 
+
+just use vi or nano to make a file with path:
+
+~/COLLECTIONAME_fc.json
+
 ##(6) - Create the oauth file. 
+
+Use this [script](https://github.com/SMAPPNYU/shellscripts#makeoauthsh)
+
+ir
+
+just use vi or nano to make a file with path:
+
+~/COLLECTIONAME.oauth.json 
 
 ##(7) - Create the 'collector' virtualenvironment if it isn't there yet.
 
@@ -66,7 +96,9 @@ and in the crontab you should see an entry for that tweet collector.
 
 and in the process tab (ps aux | grep COLLECTIONNAME)
 
-if you check philosoraptor dashboard you should see your collection.
+if you check philosoraptor dashboard you should see your collection:
+
+http://philosoraptor.bio.nyu.edu/dashboard
 
 This does not mean it was successfully created though.
 
@@ -79,5 +111,10 @@ Note: see virtualenv guide here - http://docs.python-guide.org/en/latest/dev/vir
 Note: Steps one 4-6 were supposed to be solved by this script but it stopped working on some systems:
 
 https://github.com/SMAPPNYU/shellscripts#setupshardtweetcollectorsh
+
+###authors
+
+written by <a href="https://github.com/yvan">Yvan Scher</a>
+
 
 
