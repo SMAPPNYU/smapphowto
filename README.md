@@ -13,7 +13,7 @@ Setting up software and jobs on the NYU HPC cluster.</a>
 <a href="https://github.com/SMAPPNYU/smapphowto/blob/master/howto_setup_sharded_mongodb.md">
 Setting up a sharded mongodb cluster</a>
 
-<a href="https://github.com/SMAPPNYU/smapphowto/blob/master/howto_setup_sharded_mongodb.md">
+<a href="https://github.com/SMAPPNYU/smapphowto/blob/master/howto_setup_streaming_twitter_collections.md">
 Setting up a streaming collection</a>
 
 <a href="https://github.com/SMAPPNYU/smapphowto/blob/master/howto_connect_to_nyuvpn.md">How to connect to nyu's vpn (vpn.nyu.edu) from the command line in linux or OSX.</a>
