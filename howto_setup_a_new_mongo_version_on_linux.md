@@ -1,11 +1,5 @@
 # how to setup a new version of mongo on linux
 
-#1 go to this website: [digital ocean mongo tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-14-04)
-
-#2 follow that tutorial.
-
-or
-
 #0 - get rid of old mongo
 
 ```sh
@@ -37,3 +31,5 @@ sudo apt-get update
 ```sh
 sudo apt-get install -y mongodb-org
 ```
+
+go to this website and follow tutorial: [digital ocean mongo tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-14-04)
