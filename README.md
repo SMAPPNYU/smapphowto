@@ -18,6 +18,9 @@ Setting up a streaming collection</a>
 
 <a href="https://github.com/SMAPPNYU/smapphowto/blob/master/howto_connect_to_nyuvpn.md">How to connect to nyu's vpn (vpn.nyu.edu) from the command line in linux or OSX.</a>
 
+<a href="https://github.com/SMAPPNYU/smapphowto/blob/master/howto_setup_streaming_twitter_collections.md">how to setup a new version of mongo
+</a>
+
 ###authors
 
 written by <a href="https://github.com/yvan">Yvan Scher</a>
