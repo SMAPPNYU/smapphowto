@@ -33,3 +33,14 @@ sudo apt-get install -y mongodb-org
 ```
 
 go to this website and follow tutorial: [digital ocean mongo tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-14-04)
+
+#5 - if all else fails
+
+look for mongo installs with dpkg:
+```sh
+sudo dpkg -l | grep mongo
+```
+then remove the packages you find one by one or with:
+```sh
+sudo apt-get remove mongodb* --purge
+```
