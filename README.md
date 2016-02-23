@@ -1,4 +1,11 @@
-# smapp_how_to
+```
+                                 _                   _        
+ ___ _ __ ___   __ _ _ __  _ __ | |__   _____      _| |_ ___  
+/ __| '_ ` _ \ / _` | '_ \| '_ \| '_ \ / _ \ \ /\ / / __/ _ \ 
+\__ \ | | | | | (_| | |_) | |_) | | | | (_) \ V  V /| || (_) |
+|___/_| |_| |_|\__,_| .__/| .__/|_| |_|\___/ \_/\_/  \__\___/ 
+                    |_|   |_|                                 
+```
 this is a repository with markdown files with instructions on how to do various things. 
 
 <a href="https://github.com/SMAPPNYU/smapp_how_to/blob/master/howto_request_a_collection.md">How to request a collection.</a>
