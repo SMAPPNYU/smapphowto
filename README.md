@@ -21,7 +21,7 @@ Setting up a streaming collection</a>
 <a href="https://github.com/SMAPPNYU/smapphowto/blob/master/howto_setup_a_new_mongo_version_on_linux.md">how to setup a new version of mongo on linux
 </a>
 
-[how to setup a new version of mongo on linux](https://github.com/SMAPPNYU/smapphowto/blob/master/howto_move_collections_to_new_collector.md)
+[how to move collections to a new collector](https://github.com/SMAPPNYU/smapphowto/blob/master/howto_move_collections_to_new_collector.md)
 
 ###authors
 
