@@ -43,7 +43,9 @@ crontab crontab.bak
 
 #7 - replace anything in crontab that needs replacing
 
-use [sed] (http://www.cyberciti.biz/faq/unix-linux-replace-string-words-in-many-files/) on the crontab `.bak` file
+use [sed] (http://www.cyberciti.biz/faq/unix-linux-replace-string-words-in-many-files/) on the crontab `.bak` file.
+
+[sed tutorial](http://stackoverflow.com/questions/5864146/use-slashes-in-sed-replace)
 
 #8 - start a tunnel
 
