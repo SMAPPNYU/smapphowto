@@ -41,6 +41,25 @@ mv collector_data/filter_criteria ~/filter_criteria
 crontab crontab.bak
 ```
 
-#7 start a tunnel
+#7 - replace anything in crontab that needs replacing
+
+use [sed] (http://www.cyberciti.biz/faq/unix-linux-replace-string-words-in-many-files/) on the crontab `.bak` file
+
+#8 - start a tunnel
 
 use [hades_rotating_tunnel.sh](https://github.com/SMAPPNYU/smapputilities#hades_rotating_tunnelsh)
+
+
+#9 - shut down collections on old machine by commenting out crontab entries
+
+```sh
+crontab -e
+```
+
+kill pid
+
+#10 - sartup new collections on new machines by running
+
+```sh
+nohup <TWEET COLLECTOR CRONTAB ENTRY> &
+```
