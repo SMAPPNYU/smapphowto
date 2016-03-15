@@ -8,7 +8,7 @@
 
 #2 - remove nginx default site
 
-sudo rm /etc/nginx/sites-enabled/default
+`sudo rm /etc/nginx/sites-enabled/default`
 
 #3 - setup the spec for the fileserver
 
