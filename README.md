@@ -6,7 +6,8 @@
 |___/_| |_| |_|\__,_| .__/| .__/|_| |_|\___/ \_/\_/  \__\___/ 
                     |_|   |_|                                 
 ```
-this is a repository with markdown files with instructions on how to do various things. 
+
+:bulb: smapphowto has markdown files with instructions on how to do various things.
 
 <a href="https://github.com/SMAPPNYU/smapp_how_to/blob/master/howto_request_a_collection.md">how to request a collection.</a>
 
