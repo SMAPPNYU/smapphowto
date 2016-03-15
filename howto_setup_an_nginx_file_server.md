@@ -40,6 +40,11 @@ server {
 
 to get a file put `http://DOMAIN_OR_IP_FOR_SITE:82/NAME_OF_FILE.tar.gz`
 
+#7 - to upload files
+
+[use scp](http://linux.die.net/man/1/scp)
+
+
 resources:
 
 https://www.nginx.com/resources/admin-guide/serving-static-content/
