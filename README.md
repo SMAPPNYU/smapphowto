@@ -28,6 +28,8 @@ how to set up a streaming collection</a>
 
 [how to move collections to a new collector](https://github.com/SMAPPNYU/smapphowto/blob/master/howto_move_collections_to_new_collector.md)
 
+[how to setup an nginx file server](https://github.com/SMAPPNYU/smapphowto/blob/master/howto_setup_an_nginx_file_server.md)
+
 ###authors
 
 written by <a href="https://github.com/yvan">Yvan Scher</a>
