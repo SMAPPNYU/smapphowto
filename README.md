@@ -31,6 +31,6 @@ how to set up a streaming collection</a>
 
 [how to setup an nginx file server](https://github.com/SMAPPNYU/smapphowto/blob/master/howto_setup_an_nginx_file_server.md)
 
-###authors
+#author
 
-written by <a href="https://github.com/yvan">Yvan Scher</a>
+[yvan](https://github.com/yvan)
