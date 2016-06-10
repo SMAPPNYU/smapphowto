@@ -31,6 +31,8 @@ how to set up a streaming collection</a>
 
 [how to setup an nginx file server](https://github.com/SMAPPNYU/smapphowto/blob/master/howto_setup_an_nginx_file_server.md)
 
+[how to fuse a set of disks into one virtual filesystem](https://romanrm.net/mhddfs)
+
 #author
 
 [yvan](https://github.com/yvan)
