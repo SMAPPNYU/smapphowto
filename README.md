@@ -33,7 +33,7 @@ how to set up a streaming collection</a>
 
 [how to fuse a set of disks into one virtual filesystem](https://romanrm.net/mhddfs)
 
-[dealing with data howto](https://github.com/SMAPPNYU/smapphowto/blob/master/howto_deal_with_a_large_data_dump.md)
+[how to deal with a large data dump](https://github.com/SMAPPNYU/smapphowto/blob/master/howto_deal_with_a_large_data_dump.md)
 
 #author
 
