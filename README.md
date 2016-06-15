@@ -9,6 +9,10 @@
 
 :bulb: smapphowto has markdown files with instructions on how to do various things.
 
+[how to deal with a large data dump](https://github.com/SMAPPNYU/smapphowto/blob/master/howto_deal_with_a_large_data_dump.md)
+
+[how to run smapp's ssh tunnel]()
+
 <a href="https://github.com/SMAPPNYU/smapp_how_to/blob/master/howto_request_a_collection.md">how to request a collection.</a>
 
 <a href="https://github.com/SMAPPNYU/smapp_how_to/blob/master/howto_request_a_database_data_dump.md">how to request a database data dump.</a>
@@ -32,8 +36,6 @@ how to set up a streaming collection</a>
 [how to setup an nginx file server](https://github.com/SMAPPNYU/smapphowto/blob/master/howto_setup_an_nginx_file_server.md)
 
 [how to fuse a set of disks into one virtual filesystem](https://romanrm.net/mhddfs)
-
-[how to deal with a large data dump](https://github.com/SMAPPNYU/smapphowto/blob/master/howto_deal_with_a_large_data_dump.md)
 
 #author
 

@@ -47,9 +47,11 @@ you can use [scp](https://en.wikipedia.org/wiki/Secure_copy) (aka secure copy) t
 
 or if you are on HPC/mercer
 
-`scp USERNAME_ON_YOUR_COMPUTER@mercer.es.its.nyu.edu:/archive/YOUR_NETID/`
+`scp USERNAME_ON_YOUR_COMPUTER@YOUR_COMPUTERS_IP:/path/to/file/on/your/computer /archive/YOUR_NETID/`
 
 to get `USERNAME_ON_YOUR_COMPUTER` type `whoami`
+
+to get `YOUR_COMPUTERS_IP` type `curl http://ivp4.icanhazip.com`
 
 [usage examples for scp](http://www.hypexr.org/linux_scp_help.php)
 
