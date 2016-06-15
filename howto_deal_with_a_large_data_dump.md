@@ -1,6 +1,6 @@
 how to deal with a large data dump
 
-so we've given you a large dataset and you need a place to keep it. here are your options (i would recommend a combination of the below as no single solution will insulate you from failure):
+so we've given you a large dataset and you need a place to keep it. here are your options (we would recommend a combination of the below as no single solution will insulate you from failure):
 
 ###1 - compress the data (if it isnt already)
 
