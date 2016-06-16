@@ -11,7 +11,7 @@
 
 [how to deal with a large data dump](https://github.com/SMAPPNYU/smapphowto/blob/master/howto_deal_with_a_large_data_dump.md)
 
-[how to run smapp's ssh tunnel]()
+[how to run smapp's ssh tunnel to the database](https://github.com/SMAPPNYU/smapphowto/blob/master/howto_setup_an_ssh_tunnel_to_the_db.md)
 
 <a href="https://github.com/SMAPPNYU/smapp_how_to/blob/master/howto_request_a_collection.md">how to request a collection.</a>
 
