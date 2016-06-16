@@ -26,7 +26,7 @@ https://en.wikipedia.org/wiki/List_of_archive_formats
 
 ###2 - put your data on space allocated for you on NYU HPC 
 
-everyone with an nyu netid and nyu hpc access has 2 Terabytes of space in their archive
+everyone with an nyu netid and nyu hpc access has 2 Terabytes of space in their nyu hpc archive
 
 links to get nyu HPC access:
 [https://wikis.nyu.edu/display/NYUHPC/Getting+or+renewing+an+HPC+account](https://wikis.nyu.edu/display/NYUHPC/Getting+or+renewing+an+HPC+account)

@@ -7,7 +7,7 @@
                     |_|   |_|
 ```
 
-:bulb: smapphowto has markdown files with instructions on how to do various things.
+:bulb: smapphowto has markdown files with instructions on how to do various things. all of these tutorials assume you have a mac or at least run a *nix operating system (mac osx, unix, linux, etc)if you don't not even the gods can help you at this point. get a mac, run linux, or do anything else other than windows, it's not that programmers are being mean, its just that most programmers can't even use a windows terminal these days.
 
 [how to deal with a large data dump](https://github.com/SMAPPNYU/smapphowto/blob/master/howto_deal_with_a_large_data_dump.md)
 
