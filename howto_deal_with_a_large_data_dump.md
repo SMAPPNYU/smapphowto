@@ -67,3 +67,6 @@ you can access this google drive space by going to this link [http://drive.nyu.e
 
 ask your advisor for a hard drive. if you are unsure about some detail, send an email to smapp_programmer-group@nyu.edu to ask about getting a hard drive.
 
+###5 - do not delete the data if its important for your research
+
+we do not keep backups of all data, you are responsible for keeping your data safe once it is in your posession
