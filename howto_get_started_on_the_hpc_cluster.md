@@ -1,4 +1,4 @@
-1- logging in
+#1- logging in
 
 you need to log into hpc to run programs there.
 
@@ -6,7 +6,7 @@ the easiest way is to run:
 
 `ssh YOUR_NET_ID@hpc.nyu.edu` you should then see a banner warning message 'UNAUTHORIZED PERSONS ........ DO NOT PROCEED' and a prompt `[YOUR_NET_ID@hpc ~]$` at the prompt tell hpc that you want to go into mercer `ssh YOUR_NET_ID@mercer.es.its.nyu.edu`. your nyu password is used for both logins. once you are on mercer you are actually on hpc.
 
-2- installing software you need or code you need
+#2- installing software you need or code you need
 
 check that python is installed `which python`
 
@@ -56,7 +56,7 @@ download the file with hpc run this in et another terminal tab:
 
 i.e. scp mercer:~/smapp_stuff/blabla.txt ~/smapp_stuff_local/
 
-3- running a 'job' 
+#3- running a 'job' 
 
 a job is just a program, script, or process that you decide to run. its any program you submit to run qith qsub. on hpc you cant just run your program as this doesnt actually tap into hpc's vast resources. you need to run you program as a job so it can be sent to the hpc supercomputer to be run. everything should be run as a job.
 
@@ -74,7 +74,7 @@ to run a job on hpcs cluster non interactively (to submit the job for hpc to run
 -i gives input file for this particular script (some commands would not have one, this particular python script takes in a bson file)
 -o shows where to put the output file 
 
-4- dealing with data on hpc
+#4- dealing with data on hpc
 
 to see the datasets that are archived run:
 
@@ -93,7 +93,7 @@ if you think you need to do something else you must ask a programmer to help you
 
 if there is an issue or error in copying, unzipping or any other operation, email a programmer immediately with the output of your command up to the point it failed.
 
-5- moving data to your computer
+#5- moving data to your computer
 
 setup tunnel stuff as in section 2:
 
