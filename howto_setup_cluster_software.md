@@ -41,7 +41,7 @@
 	#enter NYU net ID password when prompted and file will download to the location specified 
 
 ##START INTERACTIVE SESSION (can't do long-running jobs on login node so anytime you're dumping data it should be done on the interactive node) 
-	`qsub -I interactive.pbs `
+	`qsub -I interactive.pbs`
 	#(output should then say compute when you type "hostname")
 
 ##DUMPING TWEETS ONTO CLUSTER
