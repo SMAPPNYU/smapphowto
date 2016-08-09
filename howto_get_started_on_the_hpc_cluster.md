@@ -52,9 +52,9 @@ open a new terminal tab locally (just open a tab make sure its not logged into h
 run `ssh hpctunnel` in the new tab, you may need to enter a password
 download the file with hpc run this in et another terminal tab:
 
-`scp mercer:/path/on/your/computer/where/the/file/is /path/on/mercer/where/you/want/the/file`
+`scp /path/on/your/computer/where/the/file/is mercer:/path/on/mercer/where/you/want/the/file`
 
-i.e. scp mercer:~/smapp_stuff/blabla.txt ~/smapp_stuff_local/
+i.e. scp ~/smapp_stuff_local/blabla.txt mercer:~/smapp_stuff/
 
 #3- running a 'job' 
 
