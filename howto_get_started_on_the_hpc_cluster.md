@@ -71,8 +71,10 @@ to run a job on hpcs cluster non interactively (to submit the job for hpc to run
 `~/anaconda/bin/python ~/Sandbox/cluster/simple_launch_n_jobs.py -c '~/anaconda/bin/python ~/Projects/data-reports/2015_6_19-ArabEvents-ISIS/get_data_for_split.py -i /scratch/smapp/arab_events_all_6_19/ArabEvents___tweets_18.bson  -o /scratch/smapp/arabevents-isis-data-report'`
 
 -c is the command to be executed, in this case a python script located on the hpc filesystem at the path `~/Projects/data-reports/2015_6_19-ArabEvents-ISIS/get_data_for_split.p` exectued by python located at path `~/anaconda/bin/python`
+
 -i gives input file for this particular script (some commands would not have one, this particular python script takes in a bson file)
--o shows where to put the output file 
+
+-o shows where to put the output file, this particular script outputs a file and this tells it waht to do, other commands and scripts will have other inputs, and outputs, you need to consult the individual docs for whatever software it is you are running
 
 #4- dealing with data on hpc
 
