@@ -119,7 +119,7 @@ run `ssh hpctunnel` in the new tab, you may need to enter a password
 
 i.e. scp mercer:~/smapp_stuff/blabla.txt ~/smapp_stuff_local/
 
-resources:
+#resources:
 
 [nyu hpc wiki](https://wikis.nyu.edu/display/NYUHPC/High+Performance+Computing+at+NYU)
 
