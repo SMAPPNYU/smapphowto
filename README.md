@@ -37,6 +37,8 @@ how to set up a streaming collection</a>
 
 [how to fuse a set of disks into one virtual filesystem with mergerfs](https://github.com/trapexit/mergerfs)
 
+[getting started on the cluster]()
+
 #author
 
 [yvan](https://github.com/yvan)
