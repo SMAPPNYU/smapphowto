@@ -37,7 +37,7 @@ how to set up a streaming collection</a>
 
 [how to fuse a set of disks into one virtual filesystem with mergerfs](https://github.com/trapexit/mergerfs)
 
-[getting started on the cluster]()
+[getting started on the cluster](https://github.com/SMAPPNYU/smapphowto/blob/master/howto_get_started_on_the_hpc_cluster.md)
 
 #author
 
