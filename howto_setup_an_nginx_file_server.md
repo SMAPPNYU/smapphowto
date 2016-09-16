@@ -44,6 +44,11 @@ to get a file put `http://DOMAIN_OR_IP_FOR_SITE:82/NAME_OF_FILE.tar.gz`
 
 [use scp](http://linux.die.net/man/1/scp)
 
+#8 security
+
+you should also absolutely setup a password / user for your fileserver as shown in this [guide](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04):
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04
 
 resources:
 
