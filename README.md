@@ -39,6 +39,8 @@ how to set up a streaming collection</a>
 
 [getting started on the cluster](https://github.com/SMAPPNYU/smapphowto/blob/master/howto_get_started_on_the_hpc_cluster.md)
 
+[how to get going with sqlite and json1]()
+
 #author
 
 [yvan](https://github.com/yvan)
