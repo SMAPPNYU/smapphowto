@@ -18,7 +18,9 @@ unzip sqlite-src-3140100.zip
 ```
 
 mac osx: gcc -g -fPIC -dynamiclib sqlite-src-3140100/ext/misc/json1.c -o json1
+
 windows: cl YourCode.c -link -dll -out:YourCode.dll
+
 *nix (linux, BSD, etc): gcc -g -fPIC -shared YourCode.c -o YourCode.so
 
 note if you are trying to use json1 on hpc, you will need to download or obtain a linx *nix smapp library from a programmer. or ask them to compile one for you.
