@@ -10,10 +10,12 @@ example of compiling loadable fts5: http://charlesleifer.com/blog/building-the-s
 
 go to download page:http://sqlite.org/download.html:
 
+```sh
 curl -O http://sqlite.org/2016/sqlite-src-3140100.zip 
 # (swap '3140100' with latest version from downloads page)
 
 unzip sqlite-src-3140100.zip
+```
 
 mac osx: gcc -g -fPIC -dynamiclib sqlite-src-3140100/ext/misc/json1.c -o json1
 windows: cl YourCode.c -link -dll -out:YourCode.dll
