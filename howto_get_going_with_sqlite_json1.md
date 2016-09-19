@@ -23,7 +23,7 @@ windows: cl YourCode.c -link -dll -out:YourCode.dll
 
 *nix (linux, BSD, etc): gcc -g -fPIC -shared YourCode.c -o YourCode.so
 
-note if you are trying to use json1 on hpc, you will need to download or obtain a linx *nix smapp library from a programmer. or ask them to compile one for you.
+note: if you are trying to use json1 on hpc, you will need to download or obtain a linx *nix smapp library from a programmer. or ask them to compile one for you.
 
 3 - load the extension using this example:
 
