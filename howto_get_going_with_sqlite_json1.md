@@ -38,7 +38,12 @@ heres an example of how to search json entries by a field's value: http://stacko
 if you could saerch json field on a table like so:
 
 ```
+.load json1
 CREATE TABLE testtable (id INTEGER, json_field JSON);
+# insert data into test table
+insert into test_table (id, test_field) values (1, json('{"name":"yvan"}'));
+insert into test_table (id, test_field) values (2, json('{"name":"sara"}'));
+#select json objects from the json column
 select * from testtable where json_extract("json_field", '$.name') is not null;
 1|{"name":"yvan"}
 2|{"name":"sara"}
