@@ -29,7 +29,9 @@ note: if you are trying to use json1 on hpc, you will need to download or obtain
 
 http://stackoverflow.com/questions/39319280/python-sqlite-json1-load-extension. 
 
-(for sqlite command line shell use '.load json1’) to access library methods documented here: https://www.sqlite.org/json1.html
+for sqlite command line shell use '.load json1’
+
+ to access library methods documented here: https://www.sqlite.org/json1.html
 
 ```python
 import sqlite3
