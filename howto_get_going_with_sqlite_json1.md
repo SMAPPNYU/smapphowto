@@ -31,7 +31,31 @@ http://stackoverflow.com/questions/39319280/python-sqlite-json1-load-extension.
 
 for sqlite command line shell use '.load json1’
 
- to access library methods documented here: https://www.sqlite.org/json1.html
+to access library methods documented here: https://www.sqlite.org/json1.html
+
+heres an example of how to search json entries by a field's value: http://stackoverflow.com/questions/27497850/postgres-equivalient-in-sqlite-to-search-json-object with a json field called 'value'
+
+if you could saerch json field on a table like so:
+
+```
+CREATE TABLE testtable (id INTEGER, json_field JSON);
+select * from testtable where json_extract("json_field", '$.name') is not null;
+1|{"name":"yvan"}
+2|{"name":"sara"}
+3|{"name":"yvan"}
+4|{"name:"katherine"}
+5|{"name":"thingol"}
+6|{"name":"anarion"}
+7|{"name":"earendil"}
+8|{"name":"metalhead"}
+9|{"name":"greenthumb"}
+10|{"name":"cactushead"}
+11|{"name":"blah"}
+# or
+select * from testtable where json_extract("json_field", '$.name') is not null;
+1|{"name":"yvan"}
+3|{"name":"yvan"}
+```
 
 ```python
 import sqlite3
