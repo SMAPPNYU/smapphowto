@@ -57,7 +57,7 @@ select * from testtable where json_extract("json_field", '$.name') is not null;
 10|{"name":"cactushead"}
 11|{"name":"blah"}
 # or
-select * from testtable where json_extract("json_field", '$.name') is not null;
+select * from testtable where json_extract("json_field", '$.name') = 'yvan';
 1|{"name":"yvan"}
 3|{"name":"yvan"}
 ```
