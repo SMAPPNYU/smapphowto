@@ -17,13 +17,13 @@ curl -O http://sqlite.org/2016/sqlite-src-3140100.zip
 unzip sqlite-src-3140100.zip
 ```
 
-mac osx: gcc -g -fPIC -dynamiclib sqlite-src-3140100/ext/misc/json1.c -o json1
+mac osx: `gcc -g -fPIC -dynamiclib sqlite-src-3140100/ext/misc/json1.c -o json1`
 
-windows: cl YourCode.c -link -dll -out:YourCode.dll
+windows: `cl YourCode.c -link -dll -out:YourCode.dll`
 
-*nix (linux, BSD, etc): gcc -g -fPIC -shared YourCode.c -o YourCode.so
+*nix (linux, BSD, etc): `gcc -g -fPIC -shared YourCode.c -o YourCode.so`
 
-note: if you are trying to use json1 on hpc, you will need to download or obtain a linx *nix smapp library from a programmer. or ask them to compile one for you.
+note: if you are trying to use json1 on hpc, and successfully manage to compile json1 there please let me know. we've had trouble with it.
 
 3 - load the extension using this example:
 
@@ -35,7 +35,7 @@ to access library methods documented here: https://www.sqlite.org/json1.html
 
 heres an example of how to search json entries by a field's value: http://stackoverflow.com/questions/27497850/postgres-equivalient-in-sqlite-to-search-json-object with a json field called 'value'
 
-if you could saerch json field on a table like so:
+if you could search json field on a table like so:
 
 ```
 .load json1
