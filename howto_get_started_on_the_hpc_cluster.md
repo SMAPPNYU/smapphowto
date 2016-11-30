@@ -124,9 +124,9 @@ then to copy the data:
 ```sh
 scp mercer:~/smapp_stuff/blabla.txt ~/smapp_stuff_local/
 
-#or 
+#or say you wanted to put everything inside the data folder of a particular dataset on hpc into the smappwork_local folder on your computer.
 
-scp mercer:/scratch/olympus/us_election_hillary_dataset_whatever/data/* ~/smappwork_local/
+scp mercer:/scratch/olympus/which_ever_dataset/data/* ~/smappwork_local/
 ```
 
 #resources:
