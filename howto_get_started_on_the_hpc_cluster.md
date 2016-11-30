@@ -117,9 +117,17 @@ Host mercer
 open a new terminal tab locally (just open a tab make sure its not logged into hpc, just your regular computer's command prompt)
 run `ssh hpctunnel` in the new tab, you may need to enter a password
 
+then to copy the data:
+
 `scp mercer:/path/on/mercer/where/the/file/is /path/on/your/computer/where/you/want/the/file`
 
-i.e. scp mercer:~/smapp_stuff/blabla.txt ~/smapp_stuff_local/
+```sh
+scp mercer:~/smapp_stuff/blabla.txt ~/smapp_stuff_local/
+
+#or 
+
+scp mercer:/scratch/olympus/us_election_hillary_dataset_whatever/data/* ~/smappwork_local/
+```
 
 #resources:
 
