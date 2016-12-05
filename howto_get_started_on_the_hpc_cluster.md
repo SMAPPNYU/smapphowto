@@ -102,8 +102,6 @@ setup tunnel stuff as in section 2:
 open `~/.ssh/config`
 add this to the file:
 ```
-~/.ssh/config
-
 Host hpctunnel
    HostName hpc.nyu.edu
    ForwardX11 yes
