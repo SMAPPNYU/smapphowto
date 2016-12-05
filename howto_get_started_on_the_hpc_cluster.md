@@ -140,8 +140,8 @@ import json
 
 with open('file.json') as file:
   for line in file:
-    #do your transformation here
-    print(line)
+    print(json.loads(line))
+    function_that_turns_json_into_whatever_you_want(json.loads(line))
 ```
 
 #resources:
