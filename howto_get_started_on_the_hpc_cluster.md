@@ -129,6 +129,14 @@ scp mercer:~/smapp_stuff/blabla.txt ~/smapp_stuff_local/
 scp mercer:/scratch/olympus/which_ever_dataset/data/* ~/smappwork_local/
 ```
 
+```
+# individual file
+scp mercer:/scratch/path/to/file.json.bz2 /local/path/to/put/file.json.bz2
+
+# a whole folder, -r stands for recursive
+scp –r mercer:/scratch/path/to/data/ /local/path/to/put/data/
+```
+
 #resources:
 
 [nyu hpc wiki](https://wikis.nyu.edu/display/NYUHPC/High+Performance+Computing+at+NYU)
