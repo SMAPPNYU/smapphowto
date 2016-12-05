@@ -135,6 +135,15 @@ scp mercer:/scratch/path/to/file.json.bz2 /local/path/to/put/file.json.bz2
 scp –r mercer:/scratch/path/to/data/ /local/path/to/put/data/
 ```
 
+```python
+import json
+
+with open('file.json') as file:
+  for line in file:
+    #do your transformation here
+    print(line)
+```
+
 #resources:
 
 [nyu hpc wiki](https://wikis.nyu.edu/display/NYUHPC/High+Performance+Computing+at+NYU)
