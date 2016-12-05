@@ -127,13 +127,11 @@ scp mercer:~/smapp_stuff/blabla.txt ~/smapp_stuff_local/
 #or say you wanted to put everything inside the data folder of a particular dataset on hpc into the smappwork_local folder on your computer.
 
 scp mercer:/scratch/olympus/which_ever_dataset/data/* ~/smappwork_local/
-```
 
-```
 # individual file
 scp mercer:/scratch/path/to/file.json.bz2 /local/path/to/put/file.json.bz2
 
-# a whole folder, -r stands for recursive
+# another way to do a whole folder, -r stands for recursive
 scp –r mercer:/scratch/path/to/data/ /local/path/to/put/data/
 ```
 
