@@ -138,10 +138,11 @@ scp –r mercer:/scratch/path/to/data/ /local/path/to/put/data/
 ```python
 import json
 
-with open('file.json') as file:
-  for line in file:
-    print(json.loads(line))
-    function_that_turns_json_into_whatever_you_want(json.loads(line))
+file = open('file.json')
+for line in file:
+  print(json.loads(line))
+  function_that_turns_json_into_whatever_you_want(json.loads(line))
+file.close()
 ```
 
 #resources:
