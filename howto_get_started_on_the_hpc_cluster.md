@@ -97,7 +97,13 @@ if there is an issue or error in copying, unzipping or any other operation, emai
 
 #5- moving data to your computer
 
-setup tunnel stuff as in section 2:
+use globus:
+
+globus is a file transfer software supported by nyu that can be used to copy down files from mercer/scratch.
+
+here is a [guide](https://wikis.nyu.edu/display/NYUHPC/Using+Globus+to+transfer+files+to+and+from+NYU+HPC+storage).
+
+or use scp and ssh and have more control, setup tunnel stuff as in section 2:
 
 open `~/.ssh/config`
 add this to the file:
